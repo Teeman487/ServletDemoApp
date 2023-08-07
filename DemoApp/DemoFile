@@ -1,0 +1,41 @@
+   http://localhost:8082/DemoApp/add?num1=34&num2=12
+   add - sending our request and num1=34&num2=12 - parsing the values - thi is called as a Qury String..
+   Query String is a part where you can send your Request from a client to a server
+   HTTP -> HyperText Transfer Protocol
+   We have *7 Methods, but 5 methods are normally used in HTTP
+   1. Get, Post, Put, Delete, Options
+   Get- fethch data from server
+   Post - submit data into server ; password required 
+   Post will not put youR data in URL
+   
+   RequestDispatcherDispatcher Calling a Servlet from Servlet
+   
+    Recall: if you want to call any Servlet you have o make sure that in rhe web.xml file, you ention that server mapping
+    AddServlet containing k=k*k; should  pass the k value to SqServlet
+    above can be achieved with Session Management: sends data from one Servlet to another or share data between different Servlet
+    Easiest way to send data from AddServlet to SqServlet is Dispatching
+    
+    HttpServletRequest & HttpServletResponse
+    
+    how to call a Servlet from a Servlet: RequestDispatcher & sendRedirect Theory
+    
+    
+     sendRedirect  URL Rewriting
+     
+     HttpSession Cookie
+     
+     Servletconfig & ServletContext : They are used to get initial values for the servlets or for the application
+     
+    ServletContex: you can specify initial values ; it is a context which will be shared amongst the Servlets; if you specify this value here, it will be shared amongst the Servlets
+    ServletConfig: can specify initial values as well; it works with a particular servlet
+    if you have multiple Servlets sharing the same value go for ServletContext
+    IF YOU HAVE Different value for different Servlets go for ServletConfig
+    
+    Servlet Annotation Configuration : how do we configure Servlets with the help of Annotation
+    
+    There are two ways of configuring; 1) xml  2) annotations (easier)
+    
+    Why JSP? Java Server Pages
+    In JSP; we write the java code into the html
+    
+    How JSP Translated into Servlets
